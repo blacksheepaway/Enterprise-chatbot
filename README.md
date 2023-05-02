@@ -18,7 +18,6 @@ The Chatbot GUI allows users to send messages and receive responses from the cha
 
 Using the Chatbot GUI is simple. Users can enter their messages in the input field and press Enter or click the "Send" button. The chatbot will then process the user's message and display its response.
 
-!Example
 ![ezgif com-crop](https://user-images.githubusercontent.com/50200471/235733649-0aaa6035-b0ce-4ec9-9434-668a5d8da3bd.gif)
 
 ## Modification for Other Applications
