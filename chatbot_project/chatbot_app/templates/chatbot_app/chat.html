@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{% static 'chatbot_app/css/styles.css' %}">
+</head>
+<body>
+    <h1>Chatroom</h1>
+    <div id="chat-window">
+        {% for message in messages %}
+        <div class="message user">{{ message.user_message }}</div>
+        <div class="message bot">{{ message.bot_response }}</div>
+      {% endfor %}
+      
+    </div>
+    <form id="chat-form">
+        {% csrf_token %}
+        <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button id="clear-chat-btn">Limpar Chat</button>
+
+    
+    
+    <script src="{% static 'chatbot_app/chat.js' %}"></script>
+</body>
+</html>
